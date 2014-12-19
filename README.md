@@ -8,7 +8,7 @@ TO replicate issue,
 
         pip install -r requirements.txt
 
- 4. (EXPECTED) The following works fine:
+ 4. *(EXPECTED)* The following works fine:
 
         salt-call --local pillar.get password
 
@@ -16,6 +16,6 @@ TO replicate issue,
 
         cat /../salt-gpg-test/etc/salt/pki/master/ssh/salt-ssh.rsa.pub >>~/.ssh/authorized_keys
 
- 6. (BROKEN) The following does not work:
+ 6. *(BROKEN)* The following does not work:
 
         salt-ssh -i local pillar.get password
