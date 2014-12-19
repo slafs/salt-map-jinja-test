@@ -14,7 +14,7 @@ TO replicate issue,
 
  5. put the generated master ssh into your authorized keys
 
-        cat /../salt-gpg-test/etc/salt/pki/master/ssh/salt-ssh.rsa.pub >>~/.ssh/authorized_keys
+        cat `pwd`/etc/salt/pki/master/ssh/salt-ssh.rsa.pub >>~/.ssh/authorized_keys
 
  6. *(BROKEN)* The following does not work:
 
