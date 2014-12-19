@@ -1,0 +1,9 @@
+# vim: set ft=yaml:
+
+file_client: local
+renderer: jinja | yaml | gpg
+gpg_keydir: /Users/hatem/projects/tmp/salt-gpg-test/gpgkeys
+root_dir: /Users/hatem/projects/tmp/salt-gpg-test/
+pillar_roots:
+    base:
+        - /Users/hatem/projects/tmp/salt-gpg-test/pillars
