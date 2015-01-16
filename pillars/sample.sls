@@ -1,3 +1,5 @@
+#!yaml|gpg
+
 password: |
     -----BEGIN PGP MESSAGE-----
     Version: GnuPG v1
