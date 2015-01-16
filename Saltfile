@@ -1,5 +1,5 @@
 salt-ssh:
-  config_dir: /Users/hatem/projects/tmp/salt-gpg-test
+  config_dir: .
 
 salt-call:
-  config_dir: /Users/hatem/projects/tmp/salt-gpg-test
+  config_dir: .

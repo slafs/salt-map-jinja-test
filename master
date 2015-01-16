@@ -2,8 +2,11 @@
 
 file_client: local
 renderer: jinja | yaml | gpg
-gpg_keydir: /Users/hatem/projects/tmp/salt-gpg-test/gpgkeys
-root_dir: /Users/hatem/projects/tmp/salt-gpg-test/
+gpg_keydir: ./gpgkeys
+root_dir: .
 pillar_roots:
-    base:
-        - /Users/hatem/projects/tmp/salt-gpg-test/pillars
+  base:
+    - ./pillars
+file_roots:
+  base:
+    - ./states
