@@ -4,7 +4,7 @@ TO replicate issue (salt/issues/19114),
 
 2. Update the user in `roster` to a valid user
 
-3. from this directory (in a virtualenv) run:
+3. from this directory (in a virtualenv) run::
 
     pip install -r requirements.txt
 
