@@ -1,2 +1,2 @@
--e git+https://github.com/saltstack/salt.git@0b3c3f84c84afa1cc5a651a4cbc0fd4a511d68a0#egg=salt-dev
+-e git+https://github.com/saltstack/salt.git@2014.7#egg=salt-dev
 python-gnupg==0.3.7
