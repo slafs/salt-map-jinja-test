@@ -9,3 +9,11 @@ fileserver_backend:
 gitfs_remotes:
   - https://github.com/slafs/test-formula.git
 
+file_roots:
+  'base':
+    - ./states
+    - ./local_formulas
+
+pillar_roots:
+  'base':
+    - ./pillars

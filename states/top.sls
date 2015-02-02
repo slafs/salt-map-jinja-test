@@ -1,0 +1,4 @@
+'base':
+    '*':
+        - testsaltssh
+        - testsaltssh2

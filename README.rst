@@ -12,6 +12,8 @@ TO demonstrate an issue with salt-ssh and formula like layouts,
 
     salt-call --local state.show_sls testsaltssh
     salt-call --local state.sls testsaltssh
+    salt-call --local state.show_sls testsaltssh2
+    salt-call --local state.sls testsaltssh2
 
 5. put the generated master ssh into your authorized keys::
 
@@ -21,3 +23,11 @@ TO demonstrate an issue with salt-ssh and formula like layouts,
 
     salt-ssh -i local state.show_sls testsaltssh
     salt-ssh -i local state.sls testsaltssh
+
+    salt-ssh -i local --extra-filerefs=salt://testsaltssh/map.jinja state.show_sls testsaltssh
+    salt-ssh -i local --extra-filerefs=salt://testsaltssh/map.jinja state.sls testsaltssh
+
+7. for the contrast local formulas work as expected::
+
+    salt-ssh -i local state.show_sls testsaltssh2
+    salt-ssh -i local state.sls testsaltssh2
