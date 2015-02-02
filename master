@@ -1,12 +1,11 @@
 # vim: set ft=yaml:
 
 file_client: local
-renderer: jinja | yaml | gpg
-gpg_keydir: ./gpgkeys
 root_dir: .
-pillar_roots:
-  base:
-    - ./pillars
-file_roots:
-  base:
-    - ./states
+fileserver_backend:
+  - roots
+  - git
+
+gitfs_remotes:
+  - https://github.com/slafs/test-formula.git
+
